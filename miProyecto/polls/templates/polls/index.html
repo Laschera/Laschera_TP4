@@ -1,11 +1,13 @@
 <!-- Nombre de clases y algunas cosas especificas que estan mencionadas en el codigo fueron hechos con uso de IA -->
+{% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script src="{% static 'js/script.js' %}"></script>
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Mi Portfolio</title>
-  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -14,7 +16,7 @@
     <div class="color-selector">
       <button id="btn-colores">Colores 🎨</button>
       <div id="color-panel" class="oculto">
-        <span class="color-opcion" data-color="#e91e63" style="background-color: #e91e63;"></span> <!-- Rosa -->
+        <span class="color-opcion" data-color="#e91e63" style="background-color: #e792ae;"></span> <!-- Rosa -->
         <span class="color-opcion" data-color="#4caf50" style="background-color: #4caf50;"></span> <!-- Verde -->
         <span class="color-opcion" data-color="#f44336" style="background-color: #f44336;"></span> <!-- Rojo -->
         <span class="color-opcion" data-color="#ff9800" style="background-color: #ff9800;"></span> <!-- Naranja -->
@@ -84,9 +86,9 @@
   <section id="trabajos-photoshop" class="seccion oculto">
     <h2>Trabajos en Photoshop</h2>
     <div class="galeria">
-      <img src="img/ps1.png" alt="Proyecto 1 de Photoshop" onclick="verImagen('img/ps1.png')">
-      <img src="img/ps2.png" alt="Proyecto 2 de Photoshop" onclick="verImagen('img/ps2.png')">
-      <img src="img/ps3.png" alt="Proyecto 3 de Photoshop" onclick="verImagen('img/ps3.png')">
+      <img src="../../statics/img/ps1.png" alt="Proyecto 1 de Photoshop" onclick="verImagen('img/ps1.png')">
+      <img src="../../statics/img/ps2.png" alt="Proyecto 2 de Photoshop" onclick="verImagen('img/ps2.png')">
+      <img src="../../statics/img/ps3.png" alt="Proyecto 3 de Photoshop" onclick="verImagen('img/ps3.png')">
     </div>
   </section>
 
@@ -204,7 +206,7 @@
       <div class="contacto-izquierda">
         <div class="contacto-rectangulo">
           <h2>Contacto</h2>
-          <img src="img/yo.jpg" alt="Foto de Facundo" >
+          <img src="../../statics/img/yo.jpg" alt="Foto de Facundo" >
         </div>
       </div>
       <div class="contacto-derecha">
